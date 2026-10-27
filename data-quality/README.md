@@ -78,6 +78,14 @@ A batch once reported 617 of 617 requests succeeded and produced zero usable que
 
 For scale: 11,324 of the 16,887 non-exam questions in the bank (67%) are tagged scenario-based.
 
+Run the checks on them yourself (Python 3, standard library only):
+
+```
+python data-quality/run_checks.py
+```
+
+All 20 pass the hard checks: structure, EN/ES answer alignment, banned patterns, and the proportional length-tell rule. A naive "the correct answer must never be the longest or shortest choice" rule would flag 17 of these 20 good items. That gap is why the gate measures length proportionally.
+
 ## What I would do next
 
 1. Judge-versus-human agreement study. Have two or more human annotators label a random sample as accept, review, or reject. Compute inter-annotator agreement first, then gate-versus-human agreement, per rule. This turns "the gate passed it" into a measured number.
