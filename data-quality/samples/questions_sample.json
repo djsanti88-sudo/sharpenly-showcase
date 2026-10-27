@@ -1,0 +1,602 @@
+[
+  {
+    "role": "mechanic",
+    "level": 1,
+    "topic": "Hybrid auto-stop feature",
+    "difficulty": "easy",
+    "is_scenario": true,
+    "question": {
+      "en": "A customer asks why their hybrid vehicle automatically shuts off the gasoline engine at stoplights. What is the best response to explain this feature?",
+      "es": "Un cliente pregunta por qué su vehículo híbrido apaga automáticamente el motor de gasolina en los semáforos. ¿Cuál es la mejor respuesta para explicar esta característica?"
+    },
+    "choices": {
+      "en": [
+        "The engine shuts off to prevent overheating during idle periods, and the electric system provides cooling to critical components until you accelerate again",
+        "Shutting off the engine and charging system when stopped saves fuel since little energy is needed while not moving, improving overall fuel economy",
+        "The computer detects low power demand at stops and switches to electric-only mode to recharge the battery pack using regenerative braking energy",
+        "The engine cycles off to reduce wear on internal components during idle, and the electric motor maintains hydraulic pressure for the brake system"
+      ],
+      "es": [
+        "El motor se apaga para evitar el sobrecalentamiento durante períodos de ralentí, y el sistema eléctrico proporciona enfriamiento a componentes críticos hasta que acelere nuevamente",
+        "Apagar el motor y el sistema de carga cuando está detenido ahorra combustible ya que se necesita poca energía mientras no se mueve, mejorando la economía general de combustible",
+        "La computadora detecta baja demanda de potencia en las paradas y cambia al modo solo eléctrico para recargar el paquete de baterías usando energía de frenado regenerativo",
+        "El motor se apaga para reducir el desgaste de los componentes internos durante el ralentí, y el motor eléctrico mantiene la presión hidráulica para el sistema de frenos"
+      ]
+    },
+    "correct_index": 1,
+    "explanation": {
+      "en": "When most hybrids come to a stop, both the internal combustion engine and the high-voltage charging system are shut off. This increases fuel economy over cars that keep the engine running when not moving. Since little energy is needed to operate the vehicle systems while stopped, shutting down these components provides a measurable improvement in fuel efficiency, especially in city driving with frequent stops.",
+      "es": "Cuando la mayoría de los híbridos se detienen, tanto el motor de combustión interna como el sistema de carga de alto voltaje se apagan. Esto aumenta la economía de combustible en comparación con los automóviles que mantienen el motor funcionando cuando no se mueven. Como se necesita poca energía para operar los sistemas del vehículo mientras está detenido, apagar estos componentes proporciona una mejora medible en la eficiencia del combustible, especialmente en la conducción en ciudad con paradas frecuentes."
+    }
+  },
+  {
+    "role": "mechanic",
+    "level": 4,
+    "topic": "calibration finalization",
+    "difficulty": "medium",
+    "is_scenario": true,
+    "question": {
+      "en": "During the tuning process on a dyno, a tuner adjusts injection pulse width and ignition timing at each breakpoint of engine speed and load. What is the best approach for finalizing the calibration?",
+      "es": "Durante el proceso de ajuste en un dinamómetro, un ajustador ajusta el ancho de pulso de inyección y el tiempo de encendido en cada punto de ruptura de velocidad y carga del motor. ¿Cuál es el mejor enfoque para finalizar la calibración?"
+    },
+    "choices": {
+      "en": [
+        "Road test the vehicle and fine-tune the enrichment maps under actual driving conditions",
+        "Return the vehicle to idle and verify that all closed-loop feedback systems stabilize properly",
+        "Perform a final wide-open-throttle pull and record peak horsepower and torque numbers",
+        "Export the calibration file and compare it against the factory baseline map for deviations"
+      ],
+      "es": [
+        "Probar el vehículo en carretera y ajustar finamente los mapas de enriquecimiento bajo condiciones reales de conducción",
+        "Regresar el vehículo a ralentí y verificar que todos los sistemas de retroalimentación de circuito cerrado se estabilicen correctamente",
+        "Realizar un jalón final a acelerador completamente abierto y registrar los números pico de caballos de fuerza y torque",
+        "Exportar el archivo de calibración y compararlo contra el mapa base de fábrica para desviaciones"
+      ]
+    },
+    "correct_index": 0,
+    "explanation": {
+      "en": "With the engine running ideally on a dyno, tuners adjust the engine at each breakpoint combination of speed and load, setting ignition timing and injection pulse width. Then they must road test the vehicle and fine-tune it under actual driving conditions, also fine-tuning the enrichment maps to ensure the calibration works properly in real-world operation.",
+      "es": "Con el motor corriendo idealmente en un dinamómetro, los ajustadores ajustan el motor en cada combinación de punto de ruptura de velocidad y carga, estableciendo el tiempo de encendido y el ancho de pulso de inyección. Luego deben probar el vehículo en carretera y ajustarlo finamente bajo condiciones reales de conducción, también ajustando finamente los mapas de enriquecimiento para asegurar que la calibración funcione correctamente en operación del mundo real."
+    }
+  },
+  {
+    "role": "mechanic",
+    "level": 7,
+    "topic": "Pressure Regulator",
+    "difficulty": "hard",
+    "is_scenario": true,
+    "question": {
+      "en": "A fuel-injected vehicle runs fine when cold but experiences backfiring and power loss after reaching operating temperature. What fuel system condition should you investigate first?",
+      "es": "Un vehículo con inyección de combustible funciona bien cuando está frío pero experimenta retornos de llama y pérdida de potencia después de alcanzar la temperatura de operación. ¿Qué condición del sistema de combustible debe investigar primero?"
+    },
+    "choices": {
+      "en": [
+        "Test the fuel pressure regulator for loss of vacuum reference and check for fuel in the vacuum line",
+        "Replace the fuel pump because heat causes the pump motor to fail only at operating temperature",
+        "Check the fuel filter since restriction only becomes apparent when fuel demand increases with engine heat",
+        "Inspect the fuel injectors for external leaking which becomes worse as fuel temperature rises"
+      ],
+      "es": [
+        "Probar el regulador de presión de combustible por pérdida de referencia de vacío y revisar si hay combustible en la línea de vacío",
+        "Reemplazar la bomba de combustible porque el calor causa que el motor de la bomba falle solo a temperatura de operación",
+        "Revisar el filtro de combustible ya que la restricción solo se hace evidente cuando la demanda de combustible aumenta con el calor del motor",
+        "Inspeccionar los inyectores de combustible por fugas externas que empeoran a medida que aumenta la temperatura del combustible"
+      ]
+    },
+    "correct_index": 0,
+    "explanation": {
+      "en": "Symptoms that worsen when hot, especially backfiring and power loss, often indicate a failed pressure regulator diaphragm. The regulator may function adequately when cold but fail as temperature rises, allowing fuel to enter the vacuum line and creating rich conditions. This is a temperature-dependent failure pattern.",
+      "es": "Los síntomas que empeoran cuando está caliente, especialmente retornos de llama y pérdida de potencia, a menudo indican un diafragma del regulador de presión fallado. El regulador puede funcionar adecuadamente cuando está frío pero fallar a medida que aumenta la temperatura, permitiendo que el combustible entre en la línea de vacío y creando condiciones ricas. Este es un patrón de falla dependiente de la temperatura."
+    }
+  },
+  {
+    "role": "diagnostics",
+    "level": 2,
+    "topic": "o2_sensors",
+    "difficulty": "easy",
+    "is_scenario": true,
+    "question": {
+      "en": "Around t = 28 s the actual λ tracks the commanded λ down to 0.85. What event is the PCM commanding?",
+      "es": "Cerca de t = 28 s la λ real sigue a la comandada bajando a 0.85. ¿Qué evento ordena el PCM?"
+    },
+    "choices": {
+      "en": [
+        "WOT power enrichment",
+        "DFCO (decel fuel cut-off)",
+        "Cold-start enrichment",
+        "Closed-loop cruise"
+      ],
+      "es": [
+        "Enriquecimiento de potencia WOT",
+        "DFCO (corte de combustible en deceleración)",
+        "Enriquecimiento en frío",
+        "Crucero en lazo cerrado"
+      ]
+    },
+    "correct_index": 0,
+    "explanation": {
+      "en": "λ < 1 means rich (more fuel than stoich). The PCM commands λ ≈ 0.85 during wide-open-throttle to cool the combustion chamber and keep cylinder temps safe. Cold start uses similar enrichment but only briefly; DFCO is the opposite (lean).",
+      "es": "λ < 1 significa rica (más combustible que la estequiométrica). El PCM ordena λ ≈ 0.85 a WOT para enfriar la cámara y mantener temperaturas seguras. El frío usa enriquecimiento similar pero brevemente; DFCO es lo opuesto (pobre)."
+    }
+  },
+  {
+    "role": "diagnostics",
+    "level": 5,
+    "topic": "no-spark diagnosis",
+    "difficulty": "medium",
+    "is_scenario": true,
+    "question": {
+      "en": "A technician is diagnosing a no-start condition and confirms battery voltage at the coil positive terminal with the ignition on. The spark test shows no spark at any cylinder. What is the best next diagnostic step?",
+      "es": "Un técnico está diagnosticando una condición de no arranque y confirma voltaje de batería en la terminal positiva de la bobina con el encendido activado. La prueba de chispa no muestra chispa en ningún cilindro. ¿Cuál es el mejor siguiente paso de diagnóstico?"
+    },
+    "choices": {
+      "en": [
+        "Replace the ignition coil immediately since voltage is present but no spark is produced",
+        "Check the ground connection between the module or distributor and the engine block",
+        "Test the spark plugs for excessive gap wear using a feeler gauge",
+        "Inspect the battery terminals for corrosion and clean if necessary"
+      ],
+      "es": [
+        "Reemplazar la bobina de encendido de inmediato ya que hay voltaje presente pero no se produce chispa",
+        "Revisar la conexión a tierra entre el módulo o distribuidor y el bloque del motor",
+        "Probar las bujías para desgaste excesivo de abertura usando un calibrador de láminas",
+        "Inspeccionar las terminales de la batería en busca de corrosión y limpiar si es necesario"
+      ]
+    },
+    "correct_index": 1,
+    "explanation": {
+      "en": "When proper supply voltage is confirmed at the coil but no spark is produced, a poor ground between the distributor or module and the engine block is a common cause of weak or no spark. This ground path is essential for the ignition module to switch the coil on and off properly.",
+      "es": "Cuando se confirma voltaje de suministro adecuado en la bobina pero no se produce chispa, una mala conexión a tierra entre el distribuidor o módulo y el bloque del motor es una causa común de chispa débil o ausente. Esta ruta a tierra es esencial para que el módulo de encendido active y desactive la bobina correctamente."
+    }
+  },
+  {
+    "role": "diagnostics",
+    "level": 8,
+    "topic": "voltage drop testing",
+    "difficulty": "hard",
+    "is_scenario": true,
+    "question": {
+      "en": "An engine cranks normally but will not start. You suspect a primary ignition circuit problem. What type of test should you perform to check for high resistance in the primary circuit wiring?",
+      "es": "Un motor arranca normalmente pero no enciende. Usted sospecha un problema en el circuito primario de encendido. ¿Qué tipo de prueba debe realizar para verificar alta resistencia en el cableado del circuito primario?"
+    },
+    "choices": {
+      "en": [
+        "Perform voltage drop tests using a voltmeter on the primary circuit connections",
+        "Perform a cranking compression test to verify engine mechanical condition",
+        "Use an oscilloscope to analyze the secondary ignition firing patterns",
+        "Perform a charging system output test to verify alternator voltage"
+      ],
+      "es": [
+        "Realizar pruebas de caída de voltaje usando un voltímetro en las conexiones del circuito primario",
+        "Realizar una prueba de compresión de arranque para verificar condición mecánica del motor",
+        "Usar un osciloscopio para analizar los patrones de encendido secundario",
+        "Realizar una prueba de salida del sistema de carga para verificar voltaje del alternador"
+      ]
+    },
+    "correct_index": 0,
+    "explanation": {
+      "en": "Problems in the primary ignition circuit usually involve either low source voltage or high resistance. Both types of problems are diagnosed using a voltmeter performing voltage drop tests. When an engine cranks normally but will not start, checking primary wiring with voltage drop tests can identify high-resistance connections affecting ignition system operation.",
+      "es": "Los problemas en el circuito primario de encendido generalmente involucran voltaje de fuente bajo o alta resistencia. Ambos tipos de problemas se diagnostican usando un voltímetro realizando pruebas de caída de voltaje. Cuando un motor arranca normalmente pero no enciende, verificar el cableado primario con pruebas de caída de voltaje puede identificar conexiones de alta resistencia que afectan la operación del sistema de encendido."
+    }
+  },
+  {
+    "role": "tire_tech",
+    "level": 3,
+    "topic": "wide-base tire handling",
+    "difficulty": "easy",
+    "is_scenario": true,
+    "question": {
+      "en": "A driver reports that a truck equipped with MICHELIN X One tires handles better in curves and leans less during turns. How should you advise the driver regarding speed in curves?",
+      "es": "Un conductor reporta que un camión equipado con llantas MICHELIN X One maneja mejor en curvas e inclina menos durante los giros. ¿Cómo debe usted aconsejar al conductor respecto a la velocidad en curvas?"
+    },
+    "choices": {
+      "en": [
+        "Take advantage of improved stability by maintaining highway speed through curves",
+        "Continue obeying posted speed limits; improved handling does not justify higher speeds",
+        "Increase curve speed by 10 mph over the posted limit due to better traction",
+        "Reduce curve speed by 5 mph below posted limits until fully adapted to handling"
+      ],
+      "es": [
+        "Aprovechar la estabilidad mejorada manteniendo velocidad de autopista en las curvas",
+        "Continuar obedeciendo los límites de velocidad señalizados; el manejo mejorado no justifica velocidades mayores",
+        "Aumentar la velocidad en curvas 10 mph sobre el límite señalizado debido a mejor tracción",
+        "Reducir la velocidad en curvas 5 mph bajo los límites señalizados hasta adaptarse completamente al manejo"
+      ]
+    },
+    "correct_index": 1,
+    "explanation": {
+      "en": "The MICHELIN X One manual explicitly warns to never exceed vehicle limitations because of improved handling. The increased lateral stability should not equate to increased speed, and drivers must always obey posted speed limits.",
+      "es": "El manual MICHELIN X One advierte explícitamente nunca exceder las limitaciones del vehículo debido al manejo mejorado. La estabilidad lateral aumentada no debe equivaler a velocidad aumentada, y los conductores deben siempre obedecer los límites de velocidad señalizados."
+    }
+  },
+  {
+    "role": "tire_tech",
+    "level": 6,
+    "topic": "repair categories",
+    "difficulty": "medium",
+    "is_scenario": true,
+    "question": {
+      "en": "A fleet customer brings in a MICHELIN X One tire with two existing section repairs on the crown and asks you to repair a new 8 mm nail hole in the tread. What is the correct action?",
+      "es": "Un cliente de flota trae una llanta MICHELIN X One con dos reparaciones de sección existentes en la corona y le pide que repare un nuevo orificio de clavo de 8 mm en la banda de rodamiento. ¿Cuál es la acción correcta?"
+    },
+    "choices": {
+      "en": [
+        "Perform the nail hole repair because nail holes and section repairs have separate maximum limits per tire",
+        "Refuse the repair because the tire has reached its maximum of two section repairs and no additional repairs are allowed",
+        "Perform a section repair instead of a nail hole repair to ensure proper bonding and sealing of the puncture",
+        "Refuse the repair because combining section repairs with nail hole repairs exceeds the total allowable repair count"
+      ],
+      "es": [
+        "Realizar la reparación de orificio de clavo porque los orificios de clavo y las reparaciones de sección tienen límites máximos separados por llanta",
+        "Rechazar la reparación porque la llanta ha alcanzado su máximo de dos reparaciones de sección y no se permiten reparaciones adicionales",
+        "Realizar una reparación de sección en lugar de una reparación de orificio de clavo para asegurar el pegado y sellado adecuado de la perforación",
+        "Rechazar la reparación porque combinar reparaciones de sección con reparaciones de orificios de clavo excede el conteo total de reparaciones permitidas"
+      ]
+    },
+    "correct_index": 0,
+    "explanation": {
+      "en": "The MICHELIN X One service manual lists separate repair categories: up to 5 nail hole repairs (max 10 mm diameter) and up to 2 section repairs per tire. Since this is an 8 mm nail hole (within the 10 mm limit) and the existing repairs are section repairs, the nail hole repair can be performed as a separate category.",
+      "es": "El manual de servicio MICHELIN X One enumera categorías de reparación separadas: hasta 5 reparaciones de orificios de clavo (diámetro máximo 10 mm) y hasta 2 reparaciones de sección por llanta. Como este es un orificio de clavo de 8 mm (dentro del límite de 10 mm) y las reparaciones existentes son reparaciones de sección, la reparación del orificio de clavo puede realizarse como una categoría separada."
+    }
+  },
+  {
+    "role": "tire_tech",
+    "level": 1,
+    "topic": "TPMS sensor damage",
+    "difficulty": "easy",
+    "is_scenario": true,
+    "question": {
+      "en": "You are installing a new tire on a wheel that already has a TPMS sensor. During mounting, you hear a snap and discover the sensor valve stem has broken off. What is the best course of action?",
+      "es": "Usted está instalando una llanta nueva en un rin que ya tiene un sensor TPMS. Durante el montaje, escucha un chasquido y descubre que el vástago de válvula del sensor se ha roto. ¿Cuál es el mejor curso de acción?"
+    },
+    "choices": {
+      "en": [
+        "Replace the TPMS sensor with a new or programmed replacement and inform the customer of the additional cost and reason",
+        "Install a standard rubber valve stem in place of the broken sensor and reset the TPMS light manually",
+        "Attempt to glue the broken valve stem back onto the sensor body and test for leaks before proceeding",
+        "Leave the wheel without a valve stem temporarily and advise the customer to purchase a sensor at a later date"
+      ],
+      "es": [
+        "Reemplazar el sensor TPMS con uno nuevo o programado como reemplazo e informar al cliente del costo adicional y la razón",
+        "Instalar un vástago de válvula de hule estándar en lugar del sensor roto y reiniciar la luz TPMS manualmente",
+        "Intentar pegar el vástago de válvula roto de nuevo al cuerpo del sensor y probar fugas antes de continuar",
+        "Dejar el rin sin vástago de válvula temporalmente y aconsejar al cliente que compre un sensor en una fecha posterior"
+      ]
+    },
+    "correct_index": 0,
+    "explanation": {
+      "en": "A broken TPMS sensor valve stem cannot be repaired safely and the sensor must be replaced to restore proper TPMS function. Transparency with the customer about the damage and the need for replacement maintains trust and ensures the vehicle's safety systems work correctly. Installing a standard valve defeats the TPMS system.",
+      "es": "Un vástago de válvula de sensor TPMS roto no puede repararse de manera segura y el sensor debe reemplazarse para restaurar la función TPMS adecuada. La transparencia con el cliente sobre el daño y la necesidad de reemplazo mantiene la confianza y asegura que los sistemas de seguridad del vehículo funcionen correctamente. Instalar una válvula estándar anula el sistema TPMS."
+    }
+  },
+  {
+    "role": "service_advisor",
+    "level": 2,
+    "topic": "warranty explanation clarity",
+    "difficulty": "easy",
+    "is_scenario": true,
+    "question": {
+      "en": "You're explaining a warranty repair to a customer, but they seem confused and keep asking you to repeat technical details. What should you do?",
+      "es": "Está explicando una reparación de garantía a un cliente, pero parece confundido y sigue pidiéndole que repita detalles técnicos. ¿Qué debe hacer?"
+    },
+    "choices": {
+      "en": [
+        "Slow down, use everyday language instead of technical terms, and confirm understanding by asking them to share what they heard in their own words",
+        "Give them a printed copy of the repair order with all the technical codes so they can review it at their own pace at home",
+        "Suggest they speak directly with the technician who performed the work since they can explain the technical aspects more accurately than you can",
+        "Repeat the same explanation more slowly and clearly, emphasizing the key technical points so they understand the complexity of the warranty repair"
+      ],
+      "es": [
+        "Ir más despacio, usar lenguaje cotidiano en lugar de términos técnicos, y confirmar comprensión pidiéndoles que compartan lo que escucharon en sus propias palabras",
+        "Darles una copia impresa de la orden de reparación con todos los códigos técnicos para que puedan revisarla a su propio ritmo en casa",
+        "Sugerirles que hablen directamente con el técnico que realizó el trabajo ya que pueden explicar los aspectos técnicos con más precisión que usted",
+        "Repetir la misma explicación más despacio y claramente, enfatizando los puntos técnicos clave para que entiendan la complejidad de la reparación de garantía"
+      ]
+    },
+    "correct_index": 0,
+    "explanation": {
+      "en": "Source S5 (Delivering Happiness) emphasizes empowering employees to adapt communication to customer needs without scripts. When confusion persists, the advisor must change their approach—use plain language and verify comprehension through teach-back rather than repeating jargon louder.",
+      "es": "La fuente S5 (Delivering Happiness) enfatiza empoderar a empleados para adaptar la comunicación a las necesidades del cliente sin guiones. Cuando la confusión persiste, el asesor debe cambiar su enfoque—usar lenguaje sencillo y verificar comprensión mediante retroalimentación en lugar de repetir jerga más fuerte."
+    }
+  },
+  {
+    "role": "service_advisor",
+    "level": 5,
+    "topic": "price urgency",
+    "difficulty": "medium",
+    "is_scenario": true,
+    "question": {
+      "en": "You are presenting an estimate for transmission service to a customer. Before you finish explaining the work, the customer interrupts and says, 'Just tell me the damage - what is this going to cost me?' What is the best response?",
+      "es": "Está presentando un presupuesto para servicio de transmisión a un cliente. Antes de que termine de explicar el trabajo, el cliente interrumpe y dice: 'Solo dígame el daño, ¿cuánto me va a costar esto?' ¿Cuál es la mejor respuesta?"
+    },
+    "choices": {
+      "en": [
+        "Give them the total price immediately since that is clearly what they want to know and respect their time preference",
+        "Briefly explain what the service includes and why it is needed, then provide the price in context of the value",
+        "Ask them if they have a budget in mind first so you can determine whether the service fits their financial situation",
+        "Tell them the price but immediately offer financing options to soften the impact of the number you just quoted"
+      ],
+      "es": [
+        "Déles el precio total inmediatamente ya que claramente eso es lo que quieren saber y respete su preferencia de tiempo",
+        "Explique brevemente qué incluye el servicio y por qué es necesario, luego proporcione el precio en contexto del valor",
+        "Pregúnteles si tienen un presupuesto en mente primero para poder determinar si el servicio se ajusta a su situación financiera",
+        "Dígales el precio pero ofrezca inmediatamente opciones de financiamiento para suavizar el impacto del número que acaba de cotizar"
+      ]
+    },
+    "correct_index": 1,
+    "explanation": {
+      "en": "Even when customers ask for price upfront, providing brief context first (30 seconds or less) helps them evaluate the number when they hear it. Price without context feels arbitrary and invites sticker shock. A quick explanation of what they receive and why it matters frames the investment properly. Respect their urgency but do not skip critical value context.",
+      "es": "Incluso cuando los clientes piden el precio por adelantado, proporcionar un contexto breve primero (30 segundos o menos) les ayuda a evaluar el número cuando lo escuchan. El precio sin contexto se siente arbitrario e invita al shock del precio. Una explicación rápida de lo que reciben y por qué importa encuadra la inversión apropiadamente. Respete su urgencia pero no omita el contexto de valor crítico."
+    }
+  },
+  {
+    "role": "service_advisor",
+    "level": 8,
+    "topic": "non-responder follow-up",
+    "difficulty": "hard",
+    "is_scenario": true,
+    "question": {
+      "en": "You're calling a customer who declined a recommended cabin air filter replacement two months ago. She hasn't responded to your previous voicemail or text. What email subject line and opening approach is most likely to get a response?",
+      "es": "Está llamando a una clienta que rechazó un reemplazo de filtro de aire de cabina recomendado hace dos meses. No ha respondido a su mensaje de voz o texto anterior. ¿Qué línea de asunto de correo y enfoque de apertura tiene más probabilidad de obtener respuesta?"
+    },
+    "choices": {
+      "en": [
+        "Subject: 'Cabin Air Filter Special This Month' / Opening: Explain the discount available and ask if she'd like to schedule now",
+        "Subject: 'Have you given up on addressing your cabin air quality?' / Opening: Reference the previous decline and ask if she still has concerns",
+        "Subject: 'Quick question about your [vehicle]' / Opening: Ask if her AC airflow or cabin odor has changed since her last visit",
+        "Subject: 'Following up on your service' / Opening: Remind her of the declined filter and explain why it's important for her health"
+      ],
+      "es": [
+        "Asunto: 'Oferta especial de filtro de aire de cabina este mes' / Apertura: Explicar el descuento disponible y preguntar si desea programar ahora",
+        "Asunto: '¿Ha renunciado a resolver la calidad del aire de su cabina?' / Apertura: Hacer referencia al rechazo anterior y preguntar si todavía tiene inquietudes",
+        "Asunto: 'Pregunta rápida sobre su [vehículo]' / Apertura: Preguntar si el flujo de aire del AC o el olor de la cabina ha cambiado desde su última visita",
+        "Asunto: 'Seguimiento de su servicio' / Apertura: Recordarle el filtro rechazado y explicar por qué es importante para su salud"
+      ]
+    },
+    "correct_index": 1,
+    "explanation": {
+      "en": "The 'Have you given up' pattern is a proven re-engagement technique for non-responders. It's direct, non-pushy, and prompts a response by framing the silence as a decision. This approach respects the customer's autonomy while reopening the conversation. Generic follow-ups, discounts, or health lectures are less effective with someone who has gone silent. Source: S7 demonstrates this exact email pattern works even when perfect messages fail initially.",
+      "es": "El patrón '¿Ha renunciado?' es una técnica probada de re-compromiso para quienes no responden. Es directo, no presiona, y provoca respuesta al enmarcar el silencio como una decisión. Este enfoque respeta la autonomía del cliente mientras reabre la conversación. Seguimientos genéricos, descuentos o sermones de salud son menos efectivos con alguien que ha quedado en silencio. Fuente: S7 demuestra que este patrón exacto de correo funciona incluso cuando mensajes perfectos fallan inicialmente."
+    }
+  },
+  {
+    "role": "management",
+    "level": 3,
+    "topic": "Managing Performance Dips",
+    "difficulty": "medium",
+    "is_scenario": true,
+    "question": {
+      "en": "A high-performing technician has three comebacks in one week after six months with none. When you speak with him privately, he seems distracted and mentions he's been handling a family issue. What is the most appropriate management response?",
+      "es": "Un técnico de alto desempeño tiene tres trabajos que regresan en una semana después de seis meses sin ninguno. Cuando habla con él en privado, parece distraído y menciona que ha estado manejando un problema familiar. ¿Cuál es la respuesta gerencial más apropiada?"
+    },
+    "choices": {
+      "en": [
+        "Offer him a few days off to handle the family matter, and temporarily reassign his work to other technicians until he can return with full focus.",
+        "Acknowledge the personal challenge, but explain that customer safety and quality cannot be compromised, so his work will be inspected daily until performance rebounds.",
+        "Express empathy and ask if any short-term accommodation would help, while being clear that quality standards remain in place and you'll monitor closely with him.",
+        "Document the conversation and the performance drop formally, and place him on a performance improvement plan to ensure accountability and protect the dealership."
+      ],
+      "es": [
+        "Ofrecerle unos días libres para manejar el asunto familiar, y reasignar temporalmente su trabajo a otros técnicos hasta que pueda regresar con enfoque completo.",
+        "Reconocer el desafío personal, pero explicar que la seguridad del cliente y la calidad no pueden comprometerse, así que su trabajo será inspeccionado diariamente hasta que el desempeño se recupere.",
+        "Expresar empatía y preguntar si algún acomodo a corto plazo ayudaría, mientras deja claro que los estándares de calidad permanecen en su lugar y monitoreará de cerca con él.",
+        "Documentar la conversación y la caída del desempeño formalmente, y colocarlo en un plan de mejora de desempeño para asegurar responsabilidad y proteger al concesionario."
+      ]
+    },
+    "correct_index": 2,
+    "explanation": {
+      "en": "This balances human compassion with accountability. McGregor's Theory Y approach (S10, S11) emphasizes integration of individual and organizational needs rather than rigid control. Asking what accommodation might help shows you care and may uncover a practical solution (shift change, temporary reduced hours) without removing him entirely. Maintaining quality standards and close monitoring protects customers while supporting the employee. Simply offering time off may not be what he needs or wants; daily inspection feels punitive and erodes trust; and jumping to a formal PIP for a previously stellar performer ignores context and damages morale. Leadership means flexibility within boundaries.",
+      "es": "Esto balancea compasión humana con responsabilidad. El enfoque de Teoría Y de McGregor (S10, S11) enfatiza la integración de necesidades individuales y organizacionales en lugar de control rígido. Preguntar qué acomodo podría ayudar muestra que le importa y puede descubrir una solución práctica (cambio de turno, horas reducidas temporalmente) sin removerlo completamente. Mantener estándares de calidad y monitoreo cercano protege a los clientes mientras apoya al empleado. Simplemente ofrecer tiempo libre puede no ser lo que necesita o quiere; inspección diaria se siente punitiva y erosiona confianza; y saltar a un PIP formal para un desempeñador previamente estelar ignora contexto y daña la moral. Liderazgo significa flexibilidad dentro de límites."
+    }
+  },
+  {
+    "role": "management",
+    "level": 6,
+    "topic": "training ethics",
+    "difficulty": "medium",
+    "is_scenario": true,
+    "question": {
+      "en": "Your dealership's PM training program is expanding preventive maintenance instruction using local fleet vehicles. The fleet owner offers to pay full retail rate for all student work. What is the most important reason to decline this arrangement?",
+      "es": "El programa de capacitación de MP de su concesionario está expandiendo la instrucción de mantenimiento preventivo usando vehículos de flotillas locales. El dueño de la flotilla ofrece pagar tarifa completa al menudeo por todo el trabajo de los estudiantes. ¿Cuál es la razón más importante para rechazar este arreglo?"
+    },
+    "choices": {
+      "en": [
+        "The amount of service work performed must not conflict or compete with local independent shop business interests",
+        "Fleet vehicles require specialized training materials that are not yet approved by the dealership curriculum committee",
+        "Student technicians are not legally certified to perform paid retail work under dealership insurance policies",
+        "Preventive maintenance instruction requires donated vehicles to maintain the educational tax-exempt status of the program"
+      ],
+      "es": [
+        "La cantidad de trabajo de servicio realizado no debe entrar en conflicto o competir con los intereses comerciales de talleres independientes locales",
+        "Los vehículos de flotilla requieren materiales de capacitación especializados que aún no están aprobados por el comité curricular del concesionario",
+        "Los técnicos estudiantes no están legalmente certificados para realizar trabajo pagado al menudeo bajo las pólizas de seguro del concesionario",
+        "La instrucción de mantenimiento preventivo requiere vehículos donados para mantener el estatus educativo exento de impuestos del programa"
+      ]
+    },
+    "correct_index": 0,
+    "explanation": {
+      "en": "Training programs using service work must ensure that the volume of work does not conflict or compete with local business interests. Accepting full retail payment for student work effectively turns the training program into a competing service provider, undermining local shops and violating the educational mission of the program.",
+      "es": "Los programas de capacitación que usan trabajo de servicio deben asegurar que el volumen de trabajo no entre en conflicto o compita con intereses comerciales locales. Aceptar pago completo al menudeo por trabajo de estudiantes efectivamente convierte el programa de capacitación en un proveedor de servicio competidor, perjudicando a talleres locales y violando la misión educativa del programa."
+    }
+  },
+  {
+    "role": "management",
+    "level": 8,
+    "topic": "market segmentation",
+    "difficulty": "hard",
+    "is_scenario": true,
+    "question": {
+      "en": "Your service department serves both college students with older vehicles and working professionals with newer models. Service capacity is limited. Both groups have different needs, service budgets, and visit patterns. What strategic approach will best optimize customer satisfaction and profitability?",
+      "es": "Su departamento de servicio atiende tanto a estudiantes universitarios con vehículos más viejos como a profesionales que trabajan con modelos más nuevos. La capacidad de servicio es limitada. Ambos grupos tienen diferentes necesidades, presupuestos de servicio y patrones de visita. ¿Qué enfoque estratégico optimizará mejor la satisfacción del cliente y la rentabilidad?"
+    },
+    "choices": {
+      "en": [
+        "Choose one customer segment to focus resources and policies on, rather than trying to serve both groups equally well",
+        "Maintain equal service to both groups but implement a tiered pricing structure that reflects the difference in vehicle values",
+        "Schedule students during slower weekday hours and professionals on evenings and weekends to separate the customer groups efficiently",
+        "Create separate service teams specialized for each customer type so both groups receive tailored attention and communication"
+      ],
+      "es": [
+        "Elegir un segmento de clientes en el cual enfocar recursos y políticas, en lugar de tratar de servir a ambos grupos igualmente bien",
+        "Mantener servicio igual para ambos grupos pero implementar una estructura de precios escalonada que refleje la diferencia en valores de vehículos",
+        "Programar a los estudiantes durante horas de menor actividad entre semana y a los profesionales en noches y fines de semana para separar los grupos de clientes eficientemente",
+        "Crear equipos de servicio separados especializados para cada tipo de cliente para que ambos grupos reciban atención y comunicación personalizada"
+      ]
+    },
+    "correct_index": 0,
+    "explanation": {
+      "en": "Rumelt describes how framing the problem in terms of choosing among a few customer groups provides a dramatic reduction in complexity. If both segments could be served with the same policies and actions, the dichotomy would be useless. But when differences are significant (students vs. professionals with different purchase sizes and needs), the guiding policy should target one group. Without this, actions and resource allocations will likely be inconsistent.",
+      "es": "Rumelt describe cómo enmarcar el problema en términos de elegir entre unos pocos grupos de clientes proporciona una reducción dramática en la complejidad. Si ambos segmentos pudieran ser atendidos con las mismas políticas y acciones, la dicotomía sería inútil. Pero cuando las diferencias son significativas (estudiantes vs. profesionales con diferentes tamaños de compra y necesidades), la política guía debe dirigirse a un grupo. Sin esto, las acciones y asignaciones de recursos probablemente serán inconsistentes."
+    }
+  },
+  {
+    "role": "proskills_leadership",
+    "level": 4,
+    "topic": "coaching repeat mistake",
+    "difficulty": "medium",
+    "is_scenario": true,
+    "question": {
+      "en": "One of your senior technicians has made the same diagnostic mistake three times this month—jumping to a conclusion before completing the full system test. When you sit down to coach him, what should your first action be?",
+      "es": "Uno de sus técnicos senior ha cometido el mismo error de diagnóstico tres veces este mes: salta a una conclusión antes de completar la prueba completa del sistema. Cuando usted se sienta para orientarlo, ¿cuál debe ser su primera acción?"
+    },
+    "choices": {
+      "en": [
+        "Explain the full diagnostic process step-by-step and demonstrate the correct procedure yourself",
+        "Ask a question to understand what's driving his approach and what obstacles he sees",
+        "Review the three incidents in detail and point out the consequences of each mistake",
+        "Set a clear expectation that the mistake cannot happen again and outline the discipline path"
+      ],
+      "es": [
+        "Explicar el proceso completo de diagnóstico paso a paso y demostrar usted mismo el procedimiento correcto",
+        "Hacer una pregunta para entender qué impulsa su enfoque y qué obstáculos él ve",
+        "Revisar los tres incidentes en detalle y señalar las consecuencias de cada error",
+        "Establecer una expectativa clara de que el error no puede volver a ocurrir y describir la ruta disciplinaria"
+      ]
+    },
+    "correct_index": 1,
+    "explanation": {
+      "en": "Effective coaching begins with questions, not explanations or lectures. By asking what's driving the technician's behavior and what obstacles he faces, you uncover the real reason for the repeat mistake—pressure, lack of tools, misunderstanding—and enable him to think through the solution. Jumping straight to instruction or consequences misses the root cause and reduces ownership.",
+      "es": "La orientación efectiva comienza con preguntas, no con explicaciones o sermones. Al preguntar qué impulsa el comportamiento del técnico y qué obstáculos enfrenta, usted descubre la razón real del error repetido (presión, falta de herramientas, malentendido) y le permite pensar en la solución. Saltar directamente a la instrucción o las consecuencias ignora la causa raíz y reduce la responsabilidad."
+    }
+  },
+  {
+    "role": "proskills_leadership",
+    "level": 7,
+    "topic": "Leadership percolation",
+    "difficulty": "hard",
+    "is_scenario": true,
+    "question": {
+      "en": "Your shop has turned around over the past year with new processes, training, and higher standards. Lately you've noticed that when you're away at dealer meetings, efficiency and quality slip slightly. What does this indicate you should focus on next?",
+      "es": "Su taller ha mejorado durante el año pasado con nuevos procesos, capacitación y estándares más altos. Últimamente ha notado que cuando usted está fuera en reuniones de concesionario, la eficiencia y calidad disminuyen ligeramente. ¿En qué indica esto que debería enfocarse a continuación?"
+    },
+    "choices": {
+      "en": [
+        "Strengthening how deeply your standards and expectations are ingrained in your team so they perform consistently without your presence",
+        "Hiring an additional supervisor to provide on-site oversight whenever you are away from the shop for meetings",
+        "Installing additional cameras and monitoring systems to maintain accountability when you cannot be physically present in the facility",
+        "Reducing your time away from the shop and delegating dealer meeting attendance to your assistant manager instead"
+      ],
+      "es": [
+        "Fortalecer qué tan profundamente sus estándares y expectativas están arraigados en su equipo para que funcionen consistentemente sin su presencia",
+        "Contratar un supervisor adicional para proporcionar supervisión en el sitio cuando usted esté fuera del taller en reuniones",
+        "Instalar cámaras adicionales y sistemas de monitoreo para mantener la responsabilidad cuando no pueda estar físicamente presente en las instalaciones",
+        "Reducir su tiempo fuera del taller y delegar la asistencia a reuniones de concesionario a su subgerente en su lugar"
+      ]
+    },
+    "correct_index": 0,
+    "explanation": {
+      "en": "A well-led organization is virtually self-sustaining and self-directed. If your team requires your presence to maintain effort and excellence, your leadership has not percolated down. Your philosophy and standards must be so strongly ingrained that the team performs at a high level whether you're present or not.",
+      "es": "Una organización bien dirigida es prácticamente autosostenible y autodirigida. Si su equipo requiere su presencia para mantener el esfuerzo y la excelencia, su liderazgo no ha permeado hacia abajo. Su filosofía y estándares deben estar tan fuertemente arraigados que el equipo funcione a alto nivel esté usted presente o no."
+    }
+  },
+  {
+    "role": "proskills_comms",
+    "level": 2,
+    "topic": "Ignored deadline escalation",
+    "difficulty": "medium",
+    "is_scenario": true,
+    "question": {
+      "en": "During a busy afternoon, a customer you've been helping suddenly raises his voice, saying, \"You're not listening to me at all! I told you three times I need the car by 5 PM and you keep ignoring me!\" What is your best immediate response?",
+      "es": "Durante una tarde ocupada, un cliente al que ha estado ayudando de repente eleva la voz, diciendo: \"¡No me estás escuchando para nada! ¡Te dije tres veces que necesito el carro para las 5 PM y sigues ignorándome!\" ¿Cuál es su mejor respuesta inmediata?"
+    },
+    "choices": {
+      "en": [
+        "Stop what you're doing, make eye contact, and say, \"You're right, I apologize. Your deadline is 5 PM. Let me confirm right now with the shop whether we can meet that.\"",
+        "Apologize for the miscommunication and assure him that you did hear his deadline, then explain the challenges with meeting it and offer an alternative solution.",
+        "Acknowledge his frustration and explain that you've been juggling multiple customers, then check with the technician immediately to give him a firm answer on the 5 PM deadline.",
+        "Pause, apologize sincerely for not acknowledging his deadline clearly enough, and ask him to give you two minutes to confirm with the shop and get back to him."
+      ],
+      "es": [
+        "Detenga lo que está haciendo, establezca contacto visual y diga: \"Tiene razón, me disculpo. Su límite es a las 5 PM. Permítame confirmar ahora mismo con el taller si podemos cumplir con eso\".",
+        "Discúlpese por la mala comunicación y asegúrele que sí escuchó su límite de tiempo, luego explique los desafíos para cumplirlo y ofrezca una solución alternativa.",
+        "Reconozca su frustración y explique que ha estado manejando múltiples clientes, luego verifique con el técnico inmediatamente para darle una respuesta firme sobre el límite de las 5 PM.",
+        "Haga una pausa, discúlpese sinceramente por no reconocer su límite de tiempo con suficiente claridad, y pídale que le dé dos minutos para confirmar con el taller y regresarle la respuesta."
+      ]
+    },
+    "correct_index": 0,
+    "explanation": {
+      "en": "When a customer says \"you're not listening,\" safety is gone and they feel invisible. The fastest way to restore it is to stop, validate their concern (\"you're right\"), and take immediate action on what they said. Explaining why you missed it or asking for more time can feel like more dismissal. Immediate validation plus action shows you heard them now and are prioritizing their need.",
+      "es": "Cuando un cliente dice \"no me estás escuchando\", la seguridad se ha ido y se sienten invisibles. La forma más rápida de restaurarla es detenerse, validar su preocupación (\"tiene razón\"), y tomar acción inmediata sobre lo que dijeron. Explicar por qué lo pasó por alto o pedir más tiempo puede sentirse como más desdén. La validación inmediata más acción muestra que los escuchó ahora y está priorizando su necesidad."
+    }
+  },
+  {
+    "role": "proskills_comms",
+    "level": 5,
+    "topic": "referral trust",
+    "difficulty": "medium",
+    "is_scenario": true,
+    "question": {
+      "en": "A long-time customer refers their adult daughter to you for her first service visit. She seems hesitant and says, \"My dad trusts you, but I don't really know you.\" What is your best approach to transfer that trust quickly?",
+      "es": "Un cliente de mucho tiempo le refiere a su hija adulta para su primera visita de servicio. Ella parece dudar y dice: \"Mi papá confía en usted, pero yo realmente no lo conozco\". ¿Cuál es su mejor enfoque para transferir esa confianza rápidamente?"
+    },
+    "choices": {
+      "en": [
+        "Share a specific story about how you've helped her father over the years to demonstrate your track record.",
+        "Offer her the same service discount you give her father as a gesture of goodwill and continuity.",
+        "Explain your personal commitment to treating every customer like family, just as you've done with her father.",
+        "Focus entirely on her vehicle and her needs without mentioning her father, to build an independent relationship."
+      ],
+      "es": [
+        "Compartir una historia específica sobre cómo ha ayudado a su padre a lo largo de los años para demostrar su historial.",
+        "Ofrecerle el mismo descuento de servicio que le da a su padre como gesto de buena voluntad y continuidad.",
+        "Explicar su compromiso personal de tratar a cada cliente como familia, tal como lo ha hecho con su padre.",
+        "Enfocarse completamente en su vehículo y sus necesidades sin mencionar a su padre, para construir una relación independiente."
+      ]
+    },
+    "correct_index": 0,
+    "explanation": {
+      "en": "When someone refers you, their trust acts as social proof, but it needs to be activated with concrete evidence. A specific story bridges inherited trust with demonstrated competence, giving her a tangible reason to extend that trust to you. Generic promises or ignoring the referral connection miss the leverage that already exists. The story makes trust real and transferable.",
+      "es": "Cuando alguien lo refiere, su confianza actúa como prueba social, pero necesita ser activada con evidencia concreta. Una historia específica conecta la confianza heredada con la competencia demostrada, dándole una razón tangible para extenderle esa confianza. Las promesas genéricas o ignorar la conexión de referencia pierden el apalancamiento que ya existe. La historia hace que la confianza sea real y transferible."
+    }
+  },
+  {
+    "role": "proskills_comms",
+    "level": 6,
+    "topic": "Last resort outreach",
+    "difficulty": "hard",
+    "is_scenario": true,
+    "question": {
+      "en": "You've called a commercial account six times over two months without a callback. What is the best next action before giving up?",
+      "es": "Ha llamado a una cuenta comercial seis veces durante dos meses sin que le devuelvan la llamada. ¿Cuál es la mejor siguiente acción antes de darse por vencido?"
+    },
+    "choices": {
+      "en": [
+        "Send an 'Advanced Apologies' email expressing concern that you may have done something wrong, listing all contact dates, and asking if you've offended them in some way.",
+        "Leave one final voicemail stating: 'This is my last attempt to reach you. I will not be calling anymore. Please contact me if your situation changes.'",
+        "Contact the receptionist and ask them to place a handwritten note on the decision maker's chair with your value proposition and a smiley face drawn on it.",
+        "Switch to a different contact at the same company and mention that you've been trying to reach the original person but haven't heard back yet."
+      ],
+      "es": [
+        "Envíe un correo de 'Disculpas anticipadas' expresando preocupación de que pudo haber hecho algo mal, listando todas las fechas de contacto y preguntando si los ha ofendido de alguna manera.",
+        "Deje un último mensaje de voz indicando: 'Este es mi último intento de comunicarme. No llamaré más. Por favor contácteme si su situación cambia.'",
+        "Contacte a la recepcionista y pídale que coloque una nota escrita a mano en la silla del tomador de decisiones con su propuesta de valor y una carita feliz dibujada.",
+        "Cambie a un contacto diferente en la misma empresa y mencione que ha estado tratando de comunicarse con la persona original pero no ha recibido respuesta."
+      ]
+    },
+    "correct_index": 0,
+    "explanation": {
+      "en": "The 'Advanced Apologies' technique gets about a 90% response rate by taking a humble, concerned approach rather than a pushy one. It lists specific contact attempts, shows persistence, and asks if you've done something wrong—which often prompts a response even from busy prospects.",
+      "es": "La técnica de 'Disculpas anticipadas' obtiene alrededor de 90% de respuestas al tomar un enfoque humilde y preocupado en lugar de uno insistente. Lista intentos específicos de contacto, muestra persistencia y pregunta si hizo algo mal, lo que a menudo genera respuesta incluso de prospectos ocupados."
+    }
+  }
+]
