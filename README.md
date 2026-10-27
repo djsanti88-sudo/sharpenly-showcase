@@ -34,6 +34,7 @@ I built and measured a pipeline that has an LLM write 11,870 bilingual (EN/ES) t
 - Website: <https://sharpenlyapp.com>
 - Manager dashboard demo (no login): <https://sharpenlyapp.com/manager-preview>
 - Candidate assessment demo (no login): <https://sharpenlyapp.com/candidate-preview>
+- Shipping history: [174 releases in 6 months](docs/RELEASES.md)
 
 ### Install in 30 seconds
 
@@ -52,7 +53,7 @@ The app works offline after the first load.
 | Bilingual EN/ES questions | 20,308 in 71 bank files |
 | Study lessons | 168 across 21 categories |
 | Difficulty levels per track | 8 |
-| App releases shipped | 174 |
+| App releases shipped | [174](docs/RELEASES.md) |
 | Python test functions | 458 |
 | Cloud Functions | 12 |
 | Commits | 730 |
