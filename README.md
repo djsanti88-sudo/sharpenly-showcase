@@ -2,8 +2,8 @@
 
 # Sharpenly
 
-**Bilingual training where every question passes a quality gate first.**
-An EN/ES learning app, a manager dashboard, and the AI data-quality pipeline behind ~20,000 questions.
+**Bilingual training where every AI-generated question passes a quality gate first.**
+An EN/ES learning app, a manager dashboard, and the LLM data-quality pipeline behind ~20,000 questions.
 
 [![Live app](https://img.shields.io/badge/Live%20app-app.sharpenlyapp.com-2e7d32?style=for-the-badge)](https://app.sharpenlyapp.com)
 [![Website](https://img.shields.io/badge/Website-sharpenlyapp.com-1b5e20?style=for-the-badge)](https://sharpenlyapp.com)
@@ -16,6 +16,16 @@ An EN/ES learning app, a manager dashboard, and the AI data-quality pipeline beh
 
 > The source of the production app is private. This repo is a curated, read-only showcase:
 > screenshots, a data-quality case study, real sample questions, and trimmed code excerpts.
+
+## For AI data and LLM-evaluation reviewers: start here
+
+I built and measured a pipeline that has an LLM write 11,870 bilingual (EN/ES) training questions, then rejects or escalates the weak ones against a written rubric.
+
+- **Rubric and gate:** 15 written rules, enforced in code wherever a rule can check it, otherwise by human review. [RUBRIC.md](data-quality/RUBRIC.md), [gate_excerpt.py](data-quality/gate_excerpt.py)
+- **Measured iteration:** first pilot accepted 14% of items; after fixing the prompt and gate, a targeted repilot accepted 84%. [Case study](data-quality/README.md)
+- **Failure analysis:** a batch reported 617 of 617 requests "succeeded" and produced zero usable questions. [Postmortem](data-quality/POSTMORTEM.md)
+- **Bilingual QA:** English and Spanish answers must line up by position. [validators_excerpt.py](data-quality/validators_excerpt.py), [20 real samples](data-quality/samples/questions_sample.json)
+- **Honest limits:** the gate's agreement with human judges is not yet measured. The case study says so and lays out the study I would run next.
 
 ## Try it
 
@@ -41,7 +51,7 @@ The app works offline after the first load.
 | Bilingual EN/ES questions | 20,308 in 71 bank files |
 | Study lessons | 168 across 21 categories |
 | Difficulty levels per track | 8 |
-| Shipped app versions | 174 |
+| App releases shipped | 174 |
 | Python test functions | 458 |
 | Cloud Functions | 12 |
 | Commits | 730 |
@@ -55,13 +65,13 @@ The manager dashboard shows who is trained, who is not, and where the skill gaps
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="docs/screenshots/dashboard-heatmap-dark.png">
-  <img src="docs/screenshots/dashboard-heatmap.gif" alt="Skills-gap heatmap: employees by 9 topics" width="100%">
+  <img src="docs/screenshots/dashboard-heatmap.gif" alt="Skills-gap heatmap: employees by topic" width="100%">
 </picture>
 
 | Feature | Status |
 |---|---|
 | Alerts and KPI tiles | Live |
-| Skills-gap heatmap (employees by 9 topics) | Live |
+| Skills-gap heatmap (employees by topic; 9 topics in the demo) | Live |
 | Training compliance | Live |
 | Employee drill-down | Live |
 | Team join code, rotate, deactivate | Live |
@@ -157,19 +167,19 @@ flowchart LR
 | Failure analysis and prevention rules | [data-quality/POSTMORTEM.md](data-quality/POSTMORTEM.md) |
 | Real bilingual samples across roles and levels | [data-quality/samples/questions_sample.json](data-quality/samples/questions_sample.json) |
 
-Headline result: first pilot accepted 14% of items. After tightening the prompt and the gate, a focused repilot accepted 84% with 0 rejected, and cost per kept item fell about 4.4x. A later batch where the API reported 617 of 617 requests "succeeded" produced 0 usable questions. That led to one rule: product success, not API success.
+Headline result: first pilot accepted 14% of items. After tightening the prompt and the gate, a smaller, targeted repilot accepted 84% with 0 rejected, and cost per kept item fell about 4.4x. A later batch where the API reported 617 of 617 requests "succeeded" produced 0 usable questions. That led to one rule: product success, not API success.
 
 ## Engineering
 
 | Layer | Stack |
 |---|---|
-| App | Single-file PWA, service worker for offline, Firebase Realtime Database and Auth, Vercel |
+| App | Installable single-file web app (PWA) with offline support, Firebase Realtime Database and Auth, Vercel |
 | Site and dashboard | Next.js 16, TypeScript, Tailwind CSS 4, next-intl (EN/ES), Playwright and axe-core |
 | Backend | 12 Firebase Cloud Functions (Node 22) |
 | Content pipeline | Python, Chroma, sentence-transformers, Claude Sonnet 4.5 |
 
 - Testing: 458 Python test functions, Playwright end-to-end tests, visual-regression baselines.
-- CI: GitHub Actions for tests, a launch gate, and a weekly security job.
+- CI: GitHub Actions for tests, a pre-release launch gate, and a scheduled security scan.
 - Security: audits for XSS sinks, silent write failures, and public-data hygiene run before every release. A smoke test runs against the live deploy.
 
 More detail in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).

@@ -91,36 +91,6 @@
   },
   {
     "role": "diagnostics",
-    "level": 2,
-    "topic": "o2_sensors",
-    "difficulty": "easy",
-    "is_scenario": true,
-    "question": {
-      "en": "Around t = 28 s the actual λ tracks the commanded λ down to 0.85. What event is the PCM commanding?",
-      "es": "Cerca de t = 28 s la λ real sigue a la comandada bajando a 0.85. ¿Qué evento ordena el PCM?"
-    },
-    "choices": {
-      "en": [
-        "WOT power enrichment",
-        "DFCO (decel fuel cut-off)",
-        "Cold-start enrichment",
-        "Closed-loop cruise"
-      ],
-      "es": [
-        "Enriquecimiento de potencia WOT",
-        "DFCO (corte de combustible en deceleración)",
-        "Enriquecimiento en frío",
-        "Crucero en lazo cerrado"
-      ]
-    },
-    "correct_index": 0,
-    "explanation": {
-      "en": "λ < 1 means rich (more fuel than stoich). The PCM commands λ ≈ 0.85 during wide-open-throttle to cool the combustion chamber and keep cylinder temps safe. Cold start uses similar enrichment but only briefly; DFCO is the opposite (lean).",
-      "es": "λ < 1 significa rica (más combustible que la estequiométrica). El PCM ordena λ ≈ 0.85 a WOT para enfriar la cámara y mantener temperaturas seguras. El frío usa enriquecimiento similar pero brevemente; DFCO es lo opuesto (pobre)."
-    }
-  },
-  {
-    "role": "diagnostics",
     "level": 5,
     "topic": "no-spark diagnosis",
     "difficulty": "medium",
@@ -181,66 +151,6 @@
   },
   {
     "role": "tire_tech",
-    "level": 3,
-    "topic": "wide-base tire handling",
-    "difficulty": "easy",
-    "is_scenario": true,
-    "question": {
-      "en": "A driver reports that a truck equipped with MICHELIN X One tires handles better in curves and leans less during turns. How should you advise the driver regarding speed in curves?",
-      "es": "Un conductor reporta que un camión equipado con llantas MICHELIN X One maneja mejor en curvas e inclina menos durante los giros. ¿Cómo debe usted aconsejar al conductor respecto a la velocidad en curvas?"
-    },
-    "choices": {
-      "en": [
-        "Take advantage of improved stability by maintaining highway speed through curves",
-        "Continue obeying posted speed limits; improved handling does not justify higher speeds",
-        "Increase curve speed by 10 mph over the posted limit due to better traction",
-        "Reduce curve speed by 5 mph below posted limits until fully adapted to handling"
-      ],
-      "es": [
-        "Aprovechar la estabilidad mejorada manteniendo velocidad de autopista en las curvas",
-        "Continuar obedeciendo los límites de velocidad señalizados; el manejo mejorado no justifica velocidades mayores",
-        "Aumentar la velocidad en curvas 10 mph sobre el límite señalizado debido a mejor tracción",
-        "Reducir la velocidad en curvas 5 mph bajo los límites señalizados hasta adaptarse completamente al manejo"
-      ]
-    },
-    "correct_index": 1,
-    "explanation": {
-      "en": "The MICHELIN X One manual explicitly warns to never exceed vehicle limitations because of improved handling. The increased lateral stability should not equate to increased speed, and drivers must always obey posted speed limits.",
-      "es": "El manual MICHELIN X One advierte explícitamente nunca exceder las limitaciones del vehículo debido al manejo mejorado. La estabilidad lateral aumentada no debe equivaler a velocidad aumentada, y los conductores deben siempre obedecer los límites de velocidad señalizados."
-    }
-  },
-  {
-    "role": "tire_tech",
-    "level": 6,
-    "topic": "repair categories",
-    "difficulty": "medium",
-    "is_scenario": true,
-    "question": {
-      "en": "A fleet customer brings in a MICHELIN X One tire with two existing section repairs on the crown and asks you to repair a new 8 mm nail hole in the tread. What is the correct action?",
-      "es": "Un cliente de flota trae una llanta MICHELIN X One con dos reparaciones de sección existentes en la corona y le pide que repare un nuevo orificio de clavo de 8 mm en la banda de rodamiento. ¿Cuál es la acción correcta?"
-    },
-    "choices": {
-      "en": [
-        "Perform the nail hole repair because nail holes and section repairs have separate maximum limits per tire",
-        "Refuse the repair because the tire has reached its maximum of two section repairs and no additional repairs are allowed",
-        "Perform a section repair instead of a nail hole repair to ensure proper bonding and sealing of the puncture",
-        "Refuse the repair because combining section repairs with nail hole repairs exceeds the total allowable repair count"
-      ],
-      "es": [
-        "Realizar la reparación de orificio de clavo porque los orificios de clavo y las reparaciones de sección tienen límites máximos separados por llanta",
-        "Rechazar la reparación porque la llanta ha alcanzado su máximo de dos reparaciones de sección y no se permiten reparaciones adicionales",
-        "Realizar una reparación de sección en lugar de una reparación de orificio de clavo para asegurar el pegado y sellado adecuado de la perforación",
-        "Rechazar la reparación porque combinar reparaciones de sección con reparaciones de orificios de clavo excede el conteo total de reparaciones permitidas"
-      ]
-    },
-    "correct_index": 0,
-    "explanation": {
-      "en": "The MICHELIN X One service manual lists separate repair categories: up to 5 nail hole repairs (max 10 mm diameter) and up to 2 section repairs per tire. Since this is an 8 mm nail hole (within the 10 mm limit) and the existing repairs are section repairs, the nail hole repair can be performed as a separate category.",
-      "es": "El manual de servicio MICHELIN X One enumera categorías de reparación separadas: hasta 5 reparaciones de orificios de clavo (diámetro máximo 10 mm) y hasta 2 reparaciones de sección por llanta. Como este es un orificio de clavo de 8 mm (dentro del límite de 10 mm) y las reparaciones existentes son reparaciones de sección, la reparación del orificio de clavo puede realizarse como una categoría separada."
-    }
-  },
-  {
-    "role": "tire_tech",
     "level": 1,
     "topic": "TPMS sensor damage",
     "difficulty": "easy",
@@ -295,8 +205,8 @@
     },
     "correct_index": 0,
     "explanation": {
-      "en": "Source S5 (Delivering Happiness) emphasizes empowering employees to adapt communication to customer needs without scripts. When confusion persists, the advisor must change their approach—use plain language and verify comprehension through teach-back rather than repeating jargon louder.",
-      "es": "La fuente S5 (Delivering Happiness) enfatiza empoderar a empleados para adaptar la comunicación a las necesidades del cliente sin guiones. Cuando la confusión persiste, el asesor debe cambiar su enfoque—usar lenguaje sencillo y verificar comprensión mediante retroalimentación en lugar de repetir jerga más fuerte."
+      "en": "When confusion persists, the advisor must change their approach: use plain language and verify comprehension through teach-back rather than repeating jargon louder.",
+      "es": "Cuando la confusión persiste, el asesor debe cambiar su enfoque: usar lenguaje sencillo y verificar la comprensión mediante la técnica de que el cliente repita con sus palabras, en lugar de repetir la jerga más fuerte."
     }
   },
   {
@@ -330,36 +240,6 @@
     }
   },
   {
-    "role": "service_advisor",
-    "level": 8,
-    "topic": "non-responder follow-up",
-    "difficulty": "hard",
-    "is_scenario": true,
-    "question": {
-      "en": "You're calling a customer who declined a recommended cabin air filter replacement two months ago. She hasn't responded to your previous voicemail or text. What email subject line and opening approach is most likely to get a response?",
-      "es": "Está llamando a una clienta que rechazó un reemplazo de filtro de aire de cabina recomendado hace dos meses. No ha respondido a su mensaje de voz o texto anterior. ¿Qué línea de asunto de correo y enfoque de apertura tiene más probabilidad de obtener respuesta?"
-    },
-    "choices": {
-      "en": [
-        "Subject: 'Cabin Air Filter Special This Month' / Opening: Explain the discount available and ask if she'd like to schedule now",
-        "Subject: 'Have you given up on addressing your cabin air quality?' / Opening: Reference the previous decline and ask if she still has concerns",
-        "Subject: 'Quick question about your [vehicle]' / Opening: Ask if her AC airflow or cabin odor has changed since her last visit",
-        "Subject: 'Following up on your service' / Opening: Remind her of the declined filter and explain why it's important for her health"
-      ],
-      "es": [
-        "Asunto: 'Oferta especial de filtro de aire de cabina este mes' / Apertura: Explicar el descuento disponible y preguntar si desea programar ahora",
-        "Asunto: '¿Ha renunciado a resolver la calidad del aire de su cabina?' / Apertura: Hacer referencia al rechazo anterior y preguntar si todavía tiene inquietudes",
-        "Asunto: 'Pregunta rápida sobre su [vehículo]' / Apertura: Preguntar si el flujo de aire del AC o el olor de la cabina ha cambiado desde su última visita",
-        "Asunto: 'Seguimiento de su servicio' / Apertura: Recordarle el filtro rechazado y explicar por qué es importante para su salud"
-      ]
-    },
-    "correct_index": 1,
-    "explanation": {
-      "en": "The 'Have you given up' pattern is a proven re-engagement technique for non-responders. It's direct, non-pushy, and prompts a response by framing the silence as a decision. This approach respects the customer's autonomy while reopening the conversation. Generic follow-ups, discounts, or health lectures are less effective with someone who has gone silent. Source: S7 demonstrates this exact email pattern works even when perfect messages fail initially.",
-      "es": "El patrón '¿Ha renunciado?' es una técnica probada de re-compromiso para quienes no responden. Es directo, no presiona, y provoca respuesta al enmarcar el silencio como una decisión. Este enfoque respeta la autonomía del cliente mientras reabre la conversación. Seguimientos genéricos, descuentos o sermones de salud son menos efectivos con alguien que ha quedado en silencio. Fuente: S7 demuestra que este patrón exacto de correo funciona incluso cuando mensajes perfectos fallan inicialmente."
-    }
-  },
-  {
     "role": "management",
     "level": 3,
     "topic": "Managing Performance Dips",
@@ -385,68 +265,8 @@
     },
     "correct_index": 2,
     "explanation": {
-      "en": "This balances human compassion with accountability. McGregor's Theory Y approach (S10, S11) emphasizes integration of individual and organizational needs rather than rigid control. Asking what accommodation might help shows you care and may uncover a practical solution (shift change, temporary reduced hours) without removing him entirely. Maintaining quality standards and close monitoring protects customers while supporting the employee. Simply offering time off may not be what he needs or wants; daily inspection feels punitive and erodes trust; and jumping to a formal PIP for a previously stellar performer ignores context and damages morale. Leadership means flexibility within boundaries.",
-      "es": "Esto balancea compasión humana con responsabilidad. El enfoque de Teoría Y de McGregor (S10, S11) enfatiza la integración de necesidades individuales y organizacionales en lugar de control rígido. Preguntar qué acomodo podría ayudar muestra que le importa y puede descubrir una solución práctica (cambio de turno, horas reducidas temporalmente) sin removerlo completamente. Mantener estándares de calidad y monitoreo cercano protege a los clientes mientras apoya al empleado. Simplemente ofrecer tiempo libre puede no ser lo que necesita o quiere; inspección diaria se siente punitiva y erosiona confianza; y saltar a un PIP formal para un desempeñador previamente estelar ignora contexto y daña la moral. Liderazgo significa flexibilidad dentro de límites."
-    }
-  },
-  {
-    "role": "management",
-    "level": 6,
-    "topic": "training ethics",
-    "difficulty": "medium",
-    "is_scenario": true,
-    "question": {
-      "en": "Your dealership's PM training program is expanding preventive maintenance instruction using local fleet vehicles. The fleet owner offers to pay full retail rate for all student work. What is the most important reason to decline this arrangement?",
-      "es": "El programa de capacitación de MP de su concesionario está expandiendo la instrucción de mantenimiento preventivo usando vehículos de flotillas locales. El dueño de la flotilla ofrece pagar tarifa completa al menudeo por todo el trabajo de los estudiantes. ¿Cuál es la razón más importante para rechazar este arreglo?"
-    },
-    "choices": {
-      "en": [
-        "The amount of service work performed must not conflict or compete with local independent shop business interests",
-        "Fleet vehicles require specialized training materials that are not yet approved by the dealership curriculum committee",
-        "Student technicians are not legally certified to perform paid retail work under dealership insurance policies",
-        "Preventive maintenance instruction requires donated vehicles to maintain the educational tax-exempt status of the program"
-      ],
-      "es": [
-        "La cantidad de trabajo de servicio realizado no debe entrar en conflicto o competir con los intereses comerciales de talleres independientes locales",
-        "Los vehículos de flotilla requieren materiales de capacitación especializados que aún no están aprobados por el comité curricular del concesionario",
-        "Los técnicos estudiantes no están legalmente certificados para realizar trabajo pagado al menudeo bajo las pólizas de seguro del concesionario",
-        "La instrucción de mantenimiento preventivo requiere vehículos donados para mantener el estatus educativo exento de impuestos del programa"
-      ]
-    },
-    "correct_index": 0,
-    "explanation": {
-      "en": "Training programs using service work must ensure that the volume of work does not conflict or compete with local business interests. Accepting full retail payment for student work effectively turns the training program into a competing service provider, undermining local shops and violating the educational mission of the program.",
-      "es": "Los programas de capacitación que usan trabajo de servicio deben asegurar que el volumen de trabajo no entre en conflicto o compita con intereses comerciales locales. Aceptar pago completo al menudeo por trabajo de estudiantes efectivamente convierte el programa de capacitación en un proveedor de servicio competidor, perjudicando a talleres locales y violando la misión educativa del programa."
-    }
-  },
-  {
-    "role": "management",
-    "level": 8,
-    "topic": "market segmentation",
-    "difficulty": "hard",
-    "is_scenario": true,
-    "question": {
-      "en": "Your service department serves both college students with older vehicles and working professionals with newer models. Service capacity is limited. Both groups have different needs, service budgets, and visit patterns. What strategic approach will best optimize customer satisfaction and profitability?",
-      "es": "Su departamento de servicio atiende tanto a estudiantes universitarios con vehículos más viejos como a profesionales que trabajan con modelos más nuevos. La capacidad de servicio es limitada. Ambos grupos tienen diferentes necesidades, presupuestos de servicio y patrones de visita. ¿Qué enfoque estratégico optimizará mejor la satisfacción del cliente y la rentabilidad?"
-    },
-    "choices": {
-      "en": [
-        "Choose one customer segment to focus resources and policies on, rather than trying to serve both groups equally well",
-        "Maintain equal service to both groups but implement a tiered pricing structure that reflects the difference in vehicle values",
-        "Schedule students during slower weekday hours and professionals on evenings and weekends to separate the customer groups efficiently",
-        "Create separate service teams specialized for each customer type so both groups receive tailored attention and communication"
-      ],
-      "es": [
-        "Elegir un segmento de clientes en el cual enfocar recursos y políticas, en lugar de tratar de servir a ambos grupos igualmente bien",
-        "Mantener servicio igual para ambos grupos pero implementar una estructura de precios escalonada que refleje la diferencia en valores de vehículos",
-        "Programar a los estudiantes durante horas de menor actividad entre semana y a los profesionales en noches y fines de semana para separar los grupos de clientes eficientemente",
-        "Crear equipos de servicio separados especializados para cada tipo de cliente para que ambos grupos reciban atención y comunicación personalizada"
-      ]
-    },
-    "correct_index": 0,
-    "explanation": {
-      "en": "Rumelt describes how framing the problem in terms of choosing among a few customer groups provides a dramatic reduction in complexity. If both segments could be served with the same policies and actions, the dichotomy would be useless. But when differences are significant (students vs. professionals with different purchase sizes and needs), the guiding policy should target one group. Without this, actions and resource allocations will likely be inconsistent.",
-      "es": "Rumelt describe cómo enmarcar el problema en términos de elegir entre unos pocos grupos de clientes proporciona una reducción dramática en la complejidad. Si ambos segmentos pudieran ser atendidos con las mismas políticas y acciones, la dicotomía sería inútil. Pero cuando las diferencias son significativas (estudiantes vs. profesionales con diferentes tamaños de compra y necesidades), la política guía debe dirigirse a un grupo. Sin esto, las acciones y asignaciones de recursos probablemente serán inconsistentes."
+      "en": "This balances human compassion with accountability. A people-centered approach balances individual and organizational needs rather than relying on rigid control. Asking what accommodation might help shows you care and may uncover a practical solution (shift change, temporary reduced hours) without removing him entirely. Maintaining quality standards and close monitoring protects customers while supporting the employee. Simply offering time off may not be what he needs or wants; daily inspection feels punitive and erodes trust; and jumping to a formal PIP for a previously stellar performer ignores context and damages morale. Leadership means flexibility within boundaries.",
+      "es": "Esto balancea compasión humana con responsabilidad. Un enfoque centrado en las personas equilibra las necesidades individuales y las de la organización, en lugar de depender de un control rígido. Preguntar qué acomodo podría ayudar muestra que le importa y puede descubrir una solución práctica (cambio de turno, horas reducidas temporalmente) sin removerlo completamente. Mantener estándares de calidad y monitoreo cercano protege a los clientes mientras apoya al empleado. Simplemente ofrecer tiempo libre puede no ser lo que necesita o quiere; inspección diaria se siente punitiva y erosiona confianza; y saltar a un PIP formal para un desempeñador previamente estelar ignora contexto y daña la moral. Liderazgo significa flexibilidad dentro de límites."
     }
   },
   {
@@ -482,7 +302,7 @@
   {
     "role": "proskills_leadership",
     "level": 7,
-    "topic": "Leadership percolation",
+    "topic": "standards that hold without you",
     "difficulty": "hard",
     "is_scenario": true,
     "question": {
@@ -570,33 +390,213 @@
     }
   },
   {
-    "role": "proskills_comms",
+    "role": "tire_tech",
     "level": 6,
-    "topic": "Last resort outreach",
-    "difficulty": "hard",
+    "topic": "cracked bushing before alignment",
+    "difficulty": "medium",
     "is_scenario": true,
     "question": {
-      "en": "You've called a commercial account six times over two months without a callback. What is the best next action before giving up?",
-      "es": "Ha llamado a una cuenta comercial seis veces durante dos meses sin que le devuelvan la llamada. ¿Cuál es la mejor siguiente acción antes de darse por vencido?"
+      "en": "A control-arm bushing is visibly cracked but still holds the arm. Right pre-alignment call:",
+      "es": "Un buje de brazo de control está agrietado a la vista pero sostiene el brazo. La acción correcta antes de alinear:"
     },
     "choices": {
       "en": [
-        "Send an 'Advanced Apologies' email expressing concern that you may have done something wrong, listing all contact dates, and asking if you've offended them in some way.",
-        "Leave one final voicemail stating: 'This is my last attempt to reach you. I will not be calling anymore. Please contact me if your situation changes.'",
-        "Contact the receptionist and ask them to place a handwritten note on the decision maker's chair with your value proposition and a smiley face drawn on it.",
-        "Switch to a different contact at the same company and mention that you've been trying to reach the original person but haven't heard back yet."
+        "Align as-is to baseline first",
+        "Replace bushing before alignment",
+        "Tighten bolt and proceed normally",
+        "Add ride-height shim to compensate"
       ],
       "es": [
-        "Envíe un correo de 'Disculpas anticipadas' expresando preocupación de que pudo haber hecho algo mal, listando todas las fechas de contacto y preguntando si los ha ofendido de alguna manera.",
-        "Deje un último mensaje de voz indicando: 'Este es mi último intento de comunicarme. No llamaré más. Por favor contácteme si su situación cambia.'",
-        "Contacte a la recepcionista y pídale que coloque una nota escrita a mano en la silla del tomador de decisiones con su propuesta de valor y una carita feliz dibujada.",
-        "Cambie a un contacto diferente en la misma empresa y mencione que ha estado tratando de comunicarse con la persona original pero no ha recibido respuesta."
+        "Alinear así para tener un baseline",
+        "Reemplazar el buje antes de alinear",
+        "Apretar perno y seguir normal",
+        "Añadir laina de altura para compensar"
+      ]
+    },
+    "correct_index": 1,
+    "explanation": {
+      "en": "A degraded bushing flexes under cornering load even if it holds at rest. Aligning over it sets specs the car can't hold five minutes after leaving. Replace, then align, that's the only sequence that doesn't double the labor on the comeback.",
+      "es": "Un buje degradado flexa bajo carga aunque sostenga en reposo. Alinear sobre él fija specs que el carro no aguanta cinco minutos. Reemplaza y luego alinea, es la única secuencia que no duplica la mano de obra en el comeback."
+    }
+  },
+  {
+    "role": "diagnostics",
+    "level": 2,
+    "topic": "connector inspection",
+    "difficulty": "easy",
+    "is_scenario": true,
+    "question": {
+      "en": "You are diagnosing a no-start condition on a vehicle with electronic ignition. The engine cranks normally, and you find that primary wiring connectors at the ignition module are loose. What should you do?",
+      "es": "Usted está diagnosticando una condición de no encendido en un vehículo con encendido electrónico. El motor arranca normalmente, y usted encuentra que los conectores del cableado primario en el módulo de encendido están flojos. ¿Qué debe hacer?"
+    },
+    "choices": {
+      "en": [
+        "Clean the connector terminals thoroughly and firmly seat them, then retest for proper operation",
+        "Replace the ignition module immediately because loose connectors indicate internal module damage",
+        "Check the resistance of the ignition coil primary winding to verify it is within specifications",
+        "Test the crankshaft position sensor output voltage while cranking to confirm signal strength"
+      ],
+      "es": [
+        "Limpiar las terminales del conector completamente y asentarlas firmemente, luego probar operación",
+        "Reemplazar el módulo de encendido inmediatamente porque conectores flojos indican daño interno del módulo",
+        "Verificar la resistencia del devanado primario de la bobina de encendido contra especificaciones",
+        "Probar el voltaje de salida del sensor de posición del cigüeñal durante arranque para confirmar señal"
       ]
     },
     "correct_index": 0,
     "explanation": {
-      "en": "The 'Advanced Apologies' technique gets about a 90% response rate by taking a humble, concerned approach rather than a pushy one. It lists specific contact attempts, shows persistence, and asks if you've done something wrong—which often prompts a response even from busy prospects.",
-      "es": "La técnica de 'Disculpas anticipadas' obtiene alrededor de 90% de respuestas al tomar un enfoque humilde y preocupado en lugar de uno insistente. Lista intentos específicos de contacto, muestra persistencia y pregunta si hizo algo mal, lo que a menudo genera respuesta incluso de prospectos ocupados."
+      "en": "Loose or poorly seated primary wiring connectors are a known cause of no-start conditions in electronic ignition systems. The correct action is to clean and firmly seat the connectors, then verify the repair. This simple fix often resolves the problem without parts replacement.",
+      "es": "Los conectores del cableado primario flojos o mal asentados son una causa conocida de condiciones de no encendido en sistemas de encendido electrónico. La acción correcta es limpiar y asentar firmemente los conectores, luego verificar la reparación. Esta solución simple frecuentemente resuelve el problema sin reemplazo de piezas."
+    }
+  },
+  {
+    "role": "service_advisor",
+    "level": 8,
+    "topic": "extreme anger",
+    "difficulty": "hard",
+    "is_scenario": true,
+    "question": {
+      "en": "A customer storms in furious about a comeback and says, 'I want to speak to the owner right now! You people are crooks!' The owner is not available. What is your best immediate action?",
+      "es": "Un cliente llega furioso por un regreso y dice: '¡Quiero hablar con el dueño ahora mismo! ¡Ustedes son unos ladrones!' El dueño no está disponible. ¿Cuál es su mejor acción inmediata?"
+    },
+    "choices": {
+      "en": [
+        "Let him vent fully without interruption, acknowledge his anger, and then explain the owner will call him within the hour.",
+        "Calmly inform him that calling you crooks is unacceptable and ask him to speak respectfully or you cannot help him.",
+        "Apologize immediately and offer a full refund on the service to de-escalate the situation before it gets worse.",
+        "Escort him to a private office so other customers don't hear, then listen to his complaint and take detailed notes."
+      ],
+      "es": [
+        "Déjelo desahogarse completamente sin interrupción, reconozca su enojo y luego explique que el dueño lo llamará dentro de una hora.",
+        "Infórmele con calma que llamarlo ladrones es inaceptable y pídale que hable con respeto o no podrá ayudarlo.",
+        "Discúlpese de inmediato y ofrezca un reembolso completo del servicio para desescalar la situación antes de que empeore.",
+        "Escóltelo a una oficina privada para que otros clientes no escuchen, luego escuche su queja y tome notas detalladas."
+      ]
+    },
+    "correct_index": 0,
+    "explanation": {
+      "en": "Letting the customer vent without interruption and acknowledging his emotion first addresses his need to be heard. Only after he feels listened to can you introduce next steps. Tone policing ('speak respectfully') or rushing to solutions (refunds) before listening will escalate anger further.",
+      "es": "Dejar que el cliente se desahogue sin interrupción y reconocer su emoción primero aborda su necesidad de ser escuchado. Solo después de que sienta que lo escuchan puede introducir los siguientes pasos. Policiar el tono ('hable con respeto') o apresurarse a soluciones (reembolsos) antes de escuchar escalará el enojo aún más."
+    }
+  },
+  {
+    "role": "management",
+    "level": 6,
+    "topic": "retention strategy",
+    "difficulty": "medium",
+    "is_scenario": true,
+    "question": {
+      "en": "Your service department recently lost two experienced technicians to a competitor offering higher flat-rate pay. Your remaining techs are now asking for raises, and morale is declining. Your budget for compensation increases is limited. What is the most effective action to address this situation?",
+      "es": "Su departamento de servicio recientemente perdió dos técnicos experimentados ante un competidor que ofrece pago de tarifa plana más alto. Sus técnicos restantes ahora están pidiendo aumentos, y la moral está disminuyendo. Su presupuesto para aumentos de compensación es limitado. ¿Cuál es la acción más efectiva para abordar esta situación?"
+    },
+    "choices": {
+      "en": [
+        "Immediately match the competitor's pay rates for all technicians to prevent further attrition, even if it strains the budget temporarily.",
+        "Meet with the team to understand their concerns and explore a combination of modest raises, performance incentives, and non-monetary benefits.",
+        "Explain that the dealership cannot compete on pay alone and focus on hiring new technicians at current rates to rebuild capacity.",
+        "Offer retention bonuses only to your highest producers and explain that raises must be earned through improved individual performance."
+      ],
+      "es": [
+        "Igualar de inmediato las tarifas de pago del competidor para todos los técnicos para prevenir más deserción, aunque presione el presupuesto temporalmente.",
+        "Reunirse con el equipo para entender sus preocupaciones y explorar una combinación de aumentos modestos, incentivos de desempeño y beneficios no monetarios.",
+        "Explicar que la agencia no puede competir solo con el pago y enfocarse en contratar nuevos técnicos con tarifas actuales para reconstruir capacidad.",
+        "Ofrecer bonos de retención solo a sus productores más altos y explicar que los aumentos deben ganarse a través de desempeño individual mejorado."
+      ]
+    },
+    "correct_index": 1,
+    "explanation": {
+      "en": "Retention challenges require understanding the full range of employee motivations beyond base pay. Engaging the team in dialogue shows respect, reveals what they truly value, and allows you to design a comprehensive retention strategy within budget constraints. Reactive pay matching is financially unsustainable, while ignoring concerns or rewarding only top performers can further damage morale.",
+      "es": "Los desafíos de retención requieren comprender toda la gama de motivaciones de los empleados más allá del pago base. Involucrar al equipo en diálogo muestra respeto, revela lo que realmente valoran y le permite diseñar una estrategia integral de retención dentro de las restricciones presupuestarias. Igualar el pago de forma reactiva es financieramente insostenible, mientras que ignorar las preocupaciones o recompensar solo a los mejores puede dañar aún más la moral."
+    }
+  },
+  {
+    "role": "proskills_comms",
+    "level": 6,
+    "topic": "rushed customer",
+    "difficulty": "medium",
+    "is_scenario": true,
+    "question": {
+      "en": "A customer calls and says, \"I don't have time for this. Just tell me yes or no—can you fix my car today or not?\" What is the best next step?",
+      "es": "Un cliente llama y dice: \"No tengo tiempo para esto. Solo dígame sí o no, ¿puede arreglar mi auto hoy o no?\". ¿Cuál es el mejor siguiente paso?"
+    },
+    "choices": {
+      "en": [
+        "Match their tempo and answer directly: \"I can get you an answer in about 30 seconds if you tell me what's going on with the vehicle.\"",
+        "Slow down the conversation to show professionalism: \"I understand you're in a hurry, but I need to ask a few detailed questions first.\"",
+        "Acknowledge their urgency but set boundaries: \"I hear the urgency. Let me put you on hold briefly so I can check with the shop.\"",
+        "Redirect to a callback: \"I can tell you're rushed right now. What's a better time for me to call you back with an answer?\""
+      ],
+      "es": [
+        "Iguale su ritmo y responda directamente: \"Puedo darle una respuesta en unos 30 segundos si me dice qué está pasando con el vehículo\".\"",
+        "Desacelere la conversación para mostrar profesionalismo: \"Entiendo que tiene prisa, pero primero necesito hacerle algunas preguntas detalladas\".\"",
+        "Reconozca su urgencia pero establezca límites: \"Escucho la urgencia. Permítame ponerlo en espera brevemente para que pueda verificar con el taller\".\"",
+        "Redirija a una devolución de llamada: \"Veo que está apurado en este momento. ¿Cuál es un mejor momento para que le devuelva la llamada con una respuesta?\""
+      ]
+    },
+    "correct_index": 0,
+    "explanation": {
+      "en": "When a prospect sounds hurried on the phone, match their energy level rather than rushing or slowing down artificially. This response respects their time constraint while staying professional and getting the information needed to help them.",
+      "es": "Cuando un prospecto suena apurado por teléfono, iguale su nivel de energía en lugar de apresurarse o desacelerar artificialmente. Esta respuesta respeta su limitación de tiempo mientras se mantiene profesional y obtiene la información necesaria para ayudarlos."
+    }
+  },
+  {
+    "role": "tire_tech",
+    "level": 3,
+    "topic": "tire wear diagnosis",
+    "difficulty": "easy",
+    "is_scenario": true,
+    "question": {
+      "en": "You're performing a pre-alignment inspection and find a tire showing wear on both outer shoulders. Based on tire wear diagnosis, what alignment angle or condition is most likely incorrect?",
+      "es": "Está realizando una inspección previa a la alineación y encuentra una llanta que muestra desgaste en ambos hombros exteriores. Según el diagnóstico de desgaste de llantas, ¿qué ángulo de alineación o condición es más probable que esté incorrecta?"
+    },
+    "choices": {
+      "en": [
+        "The tire is under-inflated causing excessive shoulder contact with the road",
+        "The camber setting is excessively positive on that wheel position only",
+        "The toe setting is incorrect causing feathering across both shoulder areas",
+        "The caster angle is insufficient allowing the tire to lean during driving"
+      ],
+      "es": [
+        "La llanta está baja de presión causando contacto excesivo de los hombros con la carretera",
+        "El ajuste de camber es excesivamente positivo solo en esa posición de rueda",
+        "El ajuste de convergencia es incorrecto causando desgaste en plumas en ambas áreas de hombros",
+        "El ángulo de caster es insuficiente permitiendo que la llanta se incline durante la conducción"
+      ]
+    },
+    "correct_index": 0,
+    "explanation": {
+      "en": "Tread wear on both shoulders (outside tread wear) indicates under-inflation, not an alignment angle problem. Center tread wear indicates over-inflation, single shoulder wear indicates camber problems, and feathered wear indicates toe or loose steering parts.",
+      "es": "El desgaste de la banda de rodadura en ambos hombros (desgaste de banda exterior) indica baja presión, no un problema de ángulo de alineación. El desgaste del centro indica sobrepresión, el desgaste de un solo hombro indica problemas de camber, y el desgaste en plumas indica convergencia o partes de dirección flojas."
+    }
+  },
+  {
+    "role": "management",
+    "level": 8,
+    "topic": "funding escalation",
+    "difficulty": "hard",
+    "is_scenario": true,
+    "question": {
+      "en": "A critical warranty reimbursement contract for your high-volume truck repair program is underfunded by the corporate office. If this continues, you risk not being able to service fleet customers, which will hurt shop revenue and readiness. What should you do first?",
+      "es": "Un contrato crítico de reembolso de garantía para su programa de reparación de camiones de alto volumen está subfinanciado por la oficina corporativa. Si esto continúa, arriesga no poder dar servicio a clientes de flotillas, lo que dañará los ingresos del taller y la disponibilidad. ¿Qué debe hacer primero?"
+    },
+    "choices": {
+      "en": [
+        "Document the funding shortfall and its impact on service capability, then escalate to corporate with a request for emergency funds.",
+        "Reduce the scope of warranty services offered to fleet customers to match the available budget.",
+        "Absorb the cost overruns from other departmental budgets to avoid disrupting customer service.",
+        "Notify fleet customers that warranty service will be delayed until the next fiscal year when funding is restored."
+      ],
+      "es": [
+        "Documentar el déficit de financiamiento y su impacto en la capacidad de servicio, luego escalar a corporativo con una solicitud de fondos de emergencia.",
+        "Reducir el alcance de servicios de garantía ofrecidos a clientes de flotillas para igualar el presupuesto disponible.",
+        "Absorber los sobrecostos de otros presupuestos departamentales para evitar interrumpir el servicio al cliente.",
+        "Notificar a los clientes de flotillas que el servicio de garantía se retrasará hasta el siguiente año fiscal cuando se restaure el financiamiento."
+      ]
+    },
+    "correct_index": 0,
+    "explanation": {
+      "en": "Underfunding critical support contracts can degrade system readiness and impact mission accomplishment. The remedy is to add funds in an emergency fashion or request additional funds while documenting the operational impact. Managers must escalate funding risks quickly rather than silently degrading capability or shifting costs inappropriately.",
+      "es": "El subfinanciamiento de contratos de soporte críticos puede degradar la disponibilidad del sistema e impactar el cumplimiento de la misión. El remedio es agregar fondos de manera de emergencia o solicitar fondos adicionales mientras se documenta el impacto operacional. Los gerentes deben escalar riesgos de financiamiento rápidamente en lugar de degradar silenciosamente la capacidad o cambiar costos inapropiadamente."
     }
   }
 ]

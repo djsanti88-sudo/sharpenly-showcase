@@ -74,7 +74,7 @@ A batch once reported 617 of 617 requests succeeded and produced zero usable que
 
 ## Samples
 
-[samples/questions_sample.json](samples/questions_sample.json) has 20 real questions from the shipped bank. They cover 7 roles and all 8 levels, in English and Spanish, scenario style. Source citations are removed.
+[samples/questions_sample.json](samples/questions_sample.json) has 20 real questions from the shipped bank. They cover 7 roles and all 8 levels, in English and Spanish, scenario style. Source citations and references to the source material are removed; a few explanations were lightly edited for that reason.
 
 For scale: 11,324 of the 16,887 non-exam questions in the bank (67%) are tagged scenario-based.
 
