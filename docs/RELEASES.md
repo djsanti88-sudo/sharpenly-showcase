@@ -42,7 +42,7 @@ Commit counts are from the app repository's main branch. May is rapid iteration 
 
 ## September and August 2026
 
-- **v165** (Aug 5) Quality remediation: localized native controls, keyboard-operable home, resume, avatar and ranking actions, stricter browser-proof checks, and safer service-worker cache updates. No releases in September; the time went into the B2B manager dashboard, hiring assessments, and the website.
+- **v165** (Aug 5) Quality remediation: localized native controls, keyboard-operable home, resume, avatar and ranking actions, stricter browser-proof checks, and safer service-worker cache updates. No app releases in September.
 
 ## July 2026
 
