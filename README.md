@@ -10,7 +10,7 @@ An EN/ES learning app, a manager dashboard, and the LLM data-quality pipeline be
 [![Manager demo](https://img.shields.io/badge/Manager%20demo-no%20login-0d47a1?style=for-the-badge)](https://sharpenlyapp.com/manager-preview)
 [![Languages](https://img.shields.io/badge/Languages-EN%20%2F%20ES-6a1b9a?style=for-the-badge)](https://app.sharpenlyapp.com)
 
-<img src="docs/screenshots/app-strip.png" alt="Sharpenly app screens: quiz, lesson, Spanish home, ranking" width="100%">
+<img src="docs/screenshots/app-strip.png" alt="Sharpenly app screens: a lesson, a quiz with feedback, and the Spanish home screen" width="100%">
 
 </div>
 
@@ -25,6 +25,7 @@ I built and measured a pipeline that has an LLM write 11,870 bilingual (EN/ES) t
 - **Measured iteration:** first pilot accepted 14% of items; after fixing the prompt and gate, a targeted repilot accepted 84%. [Case study](data-quality/README.md)
 - **Failure analysis:** a batch reported 617 of 617 requests "succeeded" and produced zero usable questions. [Postmortem](data-quality/POSTMORTEM.md)
 - **Bilingual QA:** English and Spanish answers must line up by position. [validators_excerpt.py](data-quality/validators_excerpt.py), [20 real samples](data-quality/samples/questions_sample.json)
+- **Run it yourself:** `python data-quality/run_checks.py` (standard library only) validates the 20 samples and shows why the gate uses a proportional length rule: the strict rule flags 17 of 20 good items, the proportional rule flags 0.
 - **Honest limits:** the gate's agreement with human judges is not yet measured. The case study says so and lays out the study I would run next.
 
 ## Try it
@@ -82,7 +83,7 @@ The manager dashboard shows who is trained, who is not, and where the skill gaps
 | Proctored stage 2 exam | Live |
 | Convert a candidate to an employee | Live |
 | Leaderboard | Live |
-| English and Spanish, light and dark | Live |
+| English and Spanish, light and dark | Live (the public preview is English only) |
 | Auto-remediation assignments | Demo only |
 | Stripe billing | Coded, not live |
 
@@ -97,7 +98,19 @@ The manager dashboard shows who is trained, who is not, and where the skill gaps
     <td align="center">Candidate report</td>
     <td align="center">Team</td>
   </tr>
+  <tr>
+    <td><img src="docs/screenshots/hiring.png" alt="Hiring pipeline with candidate invite form" width="100%"></td>
+    <td><img src="docs/screenshots/dashboard-assignments.png" alt="Employee detail with an auto-remediation assignment" width="100%"></td>
+    <td><img src="docs/screenshots/site-es.png" alt="Spanish marketing site with the heatmap preview" width="100%"></td>
+  </tr>
+  <tr>
+    <td align="center">Hiring pipeline</td>
+    <td align="center">Employee detail + remediation (demo)</td>
+    <td align="center">Website in Spanish</td>
+  </tr>
 </table>
+
+Screens show the public demo shop with sample data; the names are fictional.
 
 ## For employees
 
