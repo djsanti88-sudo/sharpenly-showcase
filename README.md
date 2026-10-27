@@ -199,8 +199,8 @@ More detail in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
 ## About me
 
-- Name: TODO
-- LinkedIn: TODO
+- Name: Santiago Echeverri Gil
+- LinkedIn: [santiago-echeverri-gil](https://www.linkedin.com/in/santiago-echeverri-gil/)
 - Email: djsanti88@gmail.com
 - GitHub: [djsanti88-sudo](https://github.com/djsanti88-sudo)
 
