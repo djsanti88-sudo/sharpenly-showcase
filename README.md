@@ -36,6 +36,8 @@ I built and measured a pipeline that has an LLM write 11,870 bilingual (EN/ES) t
 - Candidate assessment demo (no login): <https://sharpenlyapp.com/candidate-preview>
 - Shipping history: [174 releases in 6 months](docs/RELEASES.md)
 
+<a href="https://sharpenlyapp.com"><img src="docs/screenshots/hero-site.png" alt="sharpenlyapp.com home page with the skills-gap heatmap and the phone app" width="100%"></a>
+
 ### Install in 30 seconds
 
 | Device | Steps |
@@ -56,7 +58,7 @@ The app works offline after the first load.
 | App releases shipped | [174](docs/RELEASES.md) |
 | Python test functions | 458 |
 | Cloud Functions | 12 |
-| Commits | 730 |
+| Commits | 730+ |
 | Questions the AI pipeline generated in its full batch | 11,870 |
 | Accepted by the automated gate / sent to human review / rejected | 10,356 / 451 / 1,063 |
 | First pilot acceptance, then after the fix | 14% (7/50), then 84% (21/25) |
